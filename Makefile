@@ -9,6 +9,6 @@ test:
 
 
 lint:
-	pylint --disable=R,C
+	pylint --disable=R,C C myrepolib cli web
 
 all: install lint test
