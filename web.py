@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return f"This is my library version  {__version__}"
+    return f"This is what i really wanted to write  {__version__}"
 
 @app.route("/fakedata")
 def fakedata():
