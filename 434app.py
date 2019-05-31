@@ -1,14 +1,18 @@
 
+from flask import Flask
+from flask import jsonify
 
-import webapp2
+app = Flask(__name__)
 
+@app.route('/')
+def hello():
+    """Return a friendly HTTP greeting."""
+    return 'Hello I like to make AI Apps'
 
-class MainPage(webapp2.RequestHandler):
-    def get(self):
-        self.response.headers['Content-Type'] = 'text/plain'
-        self.response.write('Hello, World!')
+@app.route('/name/<value>')
+def name(value):
+    val = {"value": value}
+    return jsonify(val)
 
-
-app = webapp2.WSGIApplication([
-    ('/', MainPage),
-], debug=True)
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8080, debug=True)
