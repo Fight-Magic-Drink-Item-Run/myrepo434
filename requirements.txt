@@ -3,7 +3,6 @@ pylint
 jupyter
 pytest-cov
 pandas
-nbval
 click
 requests
 Flask==1.0.2
