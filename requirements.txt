@@ -4,6 +4,7 @@ jupyter
 pytest-cov
 pandas
 click
+nbval
 requests
 Flask==1.0.2
 Flask-SSLify==0.1.5
