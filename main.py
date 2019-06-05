@@ -23,7 +23,7 @@ def user(name):
     return render_template('user.html', name=name)
 
 
-df = pd.read_csv("https://raw.githubusercontent.com/noahgift/sugar/master/data/education_sugar_cdc_2003.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/Fight-Magic-Drink-Item-Run/myrepo434/master/Project434%20predicted.csv?token=ALDCJLU2HMQXUY4QTZPEXMC5ABVEC")
 
 @app.route('/predictions/', methods=("POST", "GET"))
 def html_table():
